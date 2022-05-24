@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero</title>
+    <!-- Font awesome cdn link -->
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Bootstrap link -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+     <!--Linking an external Css file  -->
+   <link rel="stylesheet" href="hero.css">
+</head>
+<body>
+    <!-- container for card zand info of hero -->
+    <div class="container">
+        
+        <!-- container card for image and stats -->
+        <div class="card" style="width:20rem;" id="hero-details">
+            <div class="imgBx">
+            <img src="" class="card-img-top" alt="hero-image" id="hero-image">
+            </div>
+        </div>
+        <!-- jumbotron for hero info -->
+        <div class="jumbotron">
+            <h1 class="display-5" id="hero-name"></h1>
+            <h3 id="aliases"></h3>
+            <hr>
+            <div class="lead" id="occupation"></div>
+            <hr class="my-4">
+            <h4 class="lead" id="connections"></h4>
+            <hr>
+            <div id="additional-info"></div>
+            <div id="add-fav">
+                <button class="btn btn-primary btn-lg btn-block" id="btn-add-favourite"><i class="fa fa-plus"></i>Add to Favourites</button>
+                <button class="btn btn-danger btn-lg btn-block" id="btn-favourite"><i class="fa fa-heart"></i>My Favourites</button>
+            </div>
+        </div>
+    </div>
+    <!-- Toast Message -->
+    <div id="msg-container">
+        <div id="message">
+            Added to Favourites Successfully
+        </div>
+    </div>
+    <script src="hero.js"></script>
+</body>
+</html>

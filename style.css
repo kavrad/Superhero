@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Code to style the body tag in the html file */
+ body{
+    
+    overflow: hidden;
+    height: 100vh;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRESGd9nFV37rQszmIv8Npp5OzS2f4e2hzFtQ&usqp=CAU");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 5s;
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+} 
+@keyframes animate {
+    0%{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPyUscaY495eSD9eB2rY79ndcMlQGoVlv71Q&usqp=CAU");
+    }20%{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ3cSl46QrDP6mRr28MtsykRYnwjFdbePacw&usqp=CAU");
+    }40%{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXkw1oiOKkzWm3LEb3dMP1EWwdV-p61-xeDkyL-UOsKQ-azJ5ghPpbDsn50NksORJCJo0&usqp=CAU");
+    }60%{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN1WIi-GdsOIlfU6tnzlDL-zlEbuEaOQl1gg&usqp=CAU");
+    }80%{
+        background-image: url("https://p4.wallpaperbetter.com/wallpaper/29/892/958/lego-lego-marvel-s-avengers-black-widow-captain-america-hulk-hd-wallpaper-preview.jpg");
+    }100%{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1r25pEqiyIIpheZnxGgKL7M8gojTEwA37KQ&usqp=CAU");
+    }
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRESGd9nFV37rQszmIv8Npp5OzS2f4e2hzFtQ&usqp=CAU");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+    
+/* Container having search-bar */
+.jumbotron-container{
+    text-align: center;
+    margin-top: 10%;
+     color: #fff; 
+    /* background-color: #fff; */
+    
+}
+.jubotron-container h1{
+    font-weight: 900;
+}
+.display-4{
+    font-weight: 900;
+    font-size: 4em;
+}
+/* Search-Bar */
+.input-group input{
+    font-size: 0.5em;
+    width: 50%;
+    /* border: none;
+    color: #fff; */
+}
+#hero-name{
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 5px solid #15f4ee;
+    transition: 1.5s;
+    background: radial-gradient(red,pink,yellow,blue,orange);
+    border: none;
+    color: black;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    
+}
+#hero-name:hover{
+  box-shadow: 0 5px 50px 0 #15f4ee inset,0 5px 50px 0 #15f4ee,
+              0 5px 50px 0 #15f4ee inset,0 5px 50px 0 #15f4ee;
+  text-shadow: 0 0 5px #15f4ee,0 0 5px #15f4ee;              
+}
+button{
+    margin-left: 1%;
+}
+/* Styling for list items and list */
+#auto-fill{
+    color: #fff;
+    z-index: 1;
+    position: relative;
+    top: 0;
+    margin-top: -1.5%;
+}
+/* Styling li tags inside ul tag */
+#auto-fill li{
+    width: 25vw;
+    cursor: pointer;
+}
+#auto-complete-container{
+    max-height: 30vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/* Adding the edia query for making the website respnsive */
+@media (max-width:600px){
+    .input-group input{
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    #auto-fill li{
+        width: 40vw;
+        cursor: pointer;
+
+    }
+    button{
+        margin-top: 1%;
+    }
+}
+
+

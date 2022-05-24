@@ -1,0 +1,127 @@
+
+/* Code to style the body tag in the html file */
+ body{
+   
+   /* background-image: radial-gradient(circle at center center, rgb(93, 60, 152),rgb(10, 3, 9)); */
+   background-image: radial-gradient(circle at center center, rgb(158, 247, 84) 0%, rgb(158, 247, 84) 20%,rgb(181, 249, 66) 20%, rgb(181, 249, 66) 40%,rgb(203, 251, 49) 40%, rgb(203, 251, 49) 60%,rgb(226, 252, 31) 60%, rgb(226, 252, 31) 80%,rgb(248, 254, 13) 80%, rgb(248, 254, 13) 100%);
+}
+
+
+
+/* Container  for image and data */
+.container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    margin-top: 0.5%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+/* hero-image */
+.card{
+  display: inline-block;
+background: black;
+  
+  margin-top: 0px;
+  
+}
+
+
+
+/* Container for info about hero */
+.jumbotron{
+    display: inline-block;
+    width: 60%;
+    min-height: 100%;
+    color: white;
+    transition: 5s;
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    margin-top: 1%;
+    background-image: radial-gradient(circle at center center, rgb(60, 184, 5) 0%, rgb(60, 184, 5) 33%,rgb(78, 202, 45) 33%, rgb(78, 202, 45) 66%,rgb(96, 219, 85) 66%, rgb(96, 219, 85) 100%); background-size: 56px 56px;
+}
+@keyframes animate {
+    0%{
+        background-image: radial-gradient(circle at center center, rgb(60, 9, 9) 0%, rgb(60, 9, 9) 47%,rgb(88, 12, 47) 47%, rgb(88, 12, 47) 65%,rgb(116, 14, 85) 65%, rgb(116, 14, 85) 100%); 
+        background-size: 47px 47px;
+    }20%{
+        background-image: radial-gradient(circle at 46% 40%, rgba(228, 228, 228,0.06) 0%, rgba(228, 228, 228,0.06) 13%,transparent 13%, transparent 100%),radial-gradient(circle at 11% 41%, rgba(198, 198, 198,0.06) 0%, rgba(198, 198, 198,0.06) 19%,transparent 19%, transparent 100%),radial-gradient(circle at 52% 23%, rgba(14, 14, 14,0.06) 0%, rgba(14, 14, 14,0.06) 69%,transparent 69%, transparent 100%),radial-gradient(circle at 13% 85%, rgba(148, 148, 148,0.06) 0%, rgba(148, 148, 148,0.06) 44%,transparent 44%, transparent 100%),radial-gradient(circle at 57% 74%, rgba(232, 232, 232,0.06) 0%, rgba(232, 232, 232,0.06) 21%,transparent 21%, transparent 100%),radial-gradient(circle at 59% 54%, rgba(39, 39, 39,0.06) 0%, rgba(39, 39, 39,0.06) 49%,transparent 49%, transparent 100%),radial-gradient(circle at 98% 38%, rgba(157, 157, 157,0.06) 0%, rgba(157, 157, 157,0.06) 24%,transparent 24%, transparent 100%),radial-gradient(circle at 8% 6%, rgba(60, 60, 60,0.06) 0%, rgba(60, 60, 60,0.06) 12%,transparent 12%, transparent 100%),linear-gradient(90deg, rgb(148, 220, 10),rgb(18, 123, 10));
+    }40%{
+        background-image: linear-gradient(206deg, rgba(72, 45, 45, 0.46) 0%, rgba(72, 45, 45, 0.46) 14.286%,rgba(102, 42, 45, 0.46) 14.286%, rgba(102, 42, 45, 0.46) 28.572%,rgba(131, 39, 44, 0.46) 28.572%, rgba(131, 39, 44, 0.46) 42.858%,rgba(161, 36, 44, 0.46) 42.858%, rgba(161, 36, 44, 0.46) 57.144%,rgba(191, 33, 43, 0.46) 57.144%, rgba(191, 33, 43, 0.46) 71.43%,rgba(220, 30, 43, 0.46) 71.43%, rgba(220, 30, 43, 0.46) 85.716%,rgba(250, 27, 42, 0.46) 85.716%, rgba(250, 27, 42, 0.46) 100.002%),linear-gradient(127deg, rgb(254, 36, 223) 0%, rgb(254, 36, 223) 14.286%,rgb(227, 44, 210) 14.286%, rgb(227, 44, 210) 28.572%,rgb(201, 52, 198) 28.572%, rgb(201, 52, 198) 42.858%,rgb(174, 60, 185) 42.858%, rgb(174, 60, 185) 57.144%,rgb(147, 67, 172) 57.144%, rgb(147, 67, 172) 71.43%,rgb(121, 75, 160) 71.43%, rgb(121, 75, 160) 85.716%,rgb(94, 83, 147) 85.716%, rgb(94, 83, 147) 100.002%);
+    }60%{
+        background-image: linear-gradient(287deg, rgba(94, 35, 117, 0.5) 0%, rgba(94, 35, 117, 0.5) 14.286%,rgba(84, 71, 119, 0.5) 14.286%, rgba(84, 71, 119, 0.5) 28.572%,rgba(73, 107, 120, 0.5) 28.572%, rgba(73, 107, 120, 0.5) 42.858%,rgba(63, 143, 122, 0.5) 42.858%, rgba(63, 143, 122, 0.5) 57.144%,rgba(53, 178, 123, 0.5) 57.144%, rgba(53, 178, 123, 0.5) 71.43%,rgba(42, 214, 125, 0.5) 71.43%, rgba(42, 214, 125, 0.5) 85.716%,rgba(32, 250, 126, 0.5) 85.716%, rgba(32, 250, 126, 0.5) 100.002%),linear-gradient(173deg, rgb(185, 34, 220) 0%, rgb(185, 34, 220) 14.286%,rgb(164, 66, 203) 14.286%, rgb(164, 66, 203) 28.572%,rgb(143, 97, 186) 28.572%, rgb(143, 97, 186) 42.858%,rgb(122, 129, 170) 42.858%, rgb(122, 129, 170) 57.144%,rgb(101, 160, 153) 57.144%, rgb(101, 160, 153) 71.43%,rgb(80, 192, 136) 71.43%, rgb(80, 192, 136) 85.716%,rgb(59, 223, 119) 85.716%, rgb(59, 223, 119) 100.002%);
+    }80%{
+        background-image: linear-gradient(45deg, rgb(73, 160, 30) 0%, rgb(73, 160, 30) 6%,rgb(88, 141, 55) 6%, rgb(88, 141, 55) 11%,rgb(103, 122, 81) 11%, rgb(103, 122, 81) 55%,rgb(118, 103, 106) 55%, rgb(118, 103, 106) 81%,rgb(132, 84, 131) 81%, rgb(132, 84, 131) 83%,rgb(147, 65, 156) 83%, rgb(147, 65, 156) 92%,rgb(162, 46, 182) 92%, rgb(162, 46, 182) 95%,rgb(177, 27, 207) 95%, rgb(177, 27, 207) 100%),linear-gradient(112.5deg, rgb(73, 160, 30) 0%, rgb(73, 160, 30) 6%,rgb(88, 141, 55) 6%, rgb(88, 141, 55) 11%,rgb(103, 122, 81) 11%, rgb(103, 122, 81) 55%,rgb(118, 103, 106) 55%, rgb(118, 103, 106) 81%,rgb(132, 84, 131) 81%, rgb(132, 84, 131) 83%,rgb(147, 65, 156) 83%, rgb(147, 65, 156) 92%,rgb(162, 46, 182) 92%, rgb(162, 46, 182) 95%,rgb(177, 27, 207) 95%, rgb(177, 27, 207) 100%),linear-gradient(67.5deg, rgb(73, 160, 30) 0%, rgb(73, 160, 30) 6%,rgb(88, 141, 55) 6%, rgb(88, 141, 55) 11%,rgb(103, 122, 81) 11%, rgb(103, 122, 81) 55%,rgb(118, 103, 106) 55%, rgb(118, 103, 106) 81%,rgb(132, 84, 131) 81%, rgb(132, 84, 131) 83%,rgb(147, 65, 156) 83%, rgb(147, 65, 156) 92%,rgb(162, 46, 182) 92%, rgb(162, 46, 182) 95%,rgb(177, 27, 207) 95%, rgb(177, 27, 207) 100%),linear-gradient(90deg, rgb(24, 15, 143),rgb(170, 57, 157)); background-blend-mode:overlay,overlay,overlay,normal;
+    }100%{
+        background-image: linear-gradient(135deg, rgba(103, 103, 103,0.06) 0%, rgba(103, 103, 103,0.06) 50%,rgba(117, 117, 117,0.06) 50%, rgba(117, 117, 117,0.06) 100%),linear-gradient(135deg, rgba(49, 49, 49,0.06) 0%, rgba(49, 49, 49,0.06) 50%,rgba(228, 228, 228,0.06) 50%, rgba(228, 228, 228,0.06) 100%),linear-gradient(90deg, hsl(201,91%,51%),hsl(201,91%,51%)); 
+        background-size: 17px 17px;
+    }
+}
+.jumbotron h1{
+    font-size: 4rem;
+}
+/* hero details below image */
+.details{
+    text-align: center;
+    font-family: monospace;
+    
+    text-transform: capitalize;
+    border-bottom: 1px solid grey;
+    border-bottom-width: 80%;
+    border-radius: 25px;
+    color: blue;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+/* the horizon rule to differentiate between details */
+hr{
+    border: 2px solid white;
+}
+button{
+    margin-top: 1%;
+}
+/* Toast message */
+#msg-container{
+    position: absolute;
+    left: 40%;
+    right: auto;
+    top: 40%;
+    padding: 3%;
+    background-color: rgba(255,255,255,0.9);
+    display: none;
+}
+#message{
+    font-size: 1.2rem;
+}
+
+/* Adding the edia query for making the website respnsive */
+@media screen and  (max-width:600px){
+    .container{
+        flex-wrap: wrap;
+        width: fit-content;
+        overflow: hidden;
+    }
+    .card{
+        display: block;
+    }
+    .jumbotron{
+        display: block;
+        width: 100%;
+    }
+    .jumbotron h1{
+        font-size: 2rem;
+    }
+    #msg-container{
+        top: 125%;
+    }
+}
+
+
